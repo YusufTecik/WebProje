@@ -1,0 +1,13 @@
+<html>
+  <section id="about-me">
+    <h1>Hakkında</h1>
+    <p>Kendimi tanıtan bilgiler...</p>
+  </section>
+  <section id="hobbies">
+    <h2>Hobiler</h2>
+    <ul>
+      <li>Hobi 1</li>
+      <li>Hobi 2</li>
+    </ul>
+  </section>
+</html>
