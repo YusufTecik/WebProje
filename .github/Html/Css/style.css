@@ -1,0 +1,52 @@
+        /* Temel stiller */
+        body { 
+            background-color: #163c5e; 
+            margin: 0;
+            font-family: Arial, sans-serif;
+
+        }
+        
+        /* Üst menü stil */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background: #c3bdb2;  /* Arka plan rengi */
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Başlık stil */
+        .navbar h1 {
+            font-size: 24px;
+            color: #1a237e;  /* Metin rengi */
+            margin: 0;
+        }
+        
+        /* Menü liste stil */
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        /* Menü öğeleri stil */
+        .navbar ul li {
+            margin: 0 15px;
+        }
+        
+        /* Bağlantı stil */
+        .navbar ul li a {
+            text-decoration: none;  /* Bağlantı alt çizgisi yok */
+            font-size: 16px;
+            color: #1a237e;  /* Bağlantı metin rengi */
+        }
+
+
+
+
+
+
+
+
