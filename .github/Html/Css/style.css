@@ -200,8 +200,13 @@
     }
 
     .container6 {
+        width: 60%;
+        height: auto;
         justify-content: center;
         align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
     .table1 {
         color: white;
@@ -227,6 +232,154 @@
         border-style: groove;
     }
 
+    .container7 {
+        width: 60%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .table2 {
+        color: white;
+        border: white 4px solid;
+        border-style: groove;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .table2 th {
+        background-color: #8894a2;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        border: white 4px solid;
+        border-style: groove;
+    }
+    .table2 td {
+        background-color: #8894a2;
+        color: white;
+        padding: 10px;
+        text-align: left;
+        border: white 4px solid;
+        border-style: groove;
+    }
+
         
+    .container8 {
+        width: 70%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .table3 {
+        color: white;
+        margin-left: auto;
+        margin-right: auto;
+        border: white 4px solid;
+        border-style: groove;
+    }
+    .table3 th {
+        background-color: #8894a2;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        border: white 4px solid;
+        border-style: groove;
+    }
+    .table3 td {
+        background-color: #8894a2;
+        color: white;
+        padding: 10px;
+        text-align: left;
+        border: white 4px solid;
+        border-style: groove;
+    }
+
+        
+    .container9 {
+        width: 60%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .table4 {
+        color: white;
+        margin-left: auto;
+        margin-right: auto;
+        border: white 4px solid;
+        border-style: groove;
+    }
+    .table4 th {
+        background-color: #8894a2;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        border: white 4px solid;
+        border-style: groove;
+    }
+    .table4 td {
+        background-color: #8894a2;
+        color: white;
+        padding: 10px;
+        text-align: left;
+        border: white 4px solid;
+        border-style: groove;
+    }
+/* Özgeçmiş *//* Özgeçmiş *//* Özgeçmiş *//* Özgeçmiş *//* Özgeçmiş *//* Özgeçmiş *//* Özgeçmiş *//* Özgeçmiş *//* Özgeçmiş *//* Özgeçmiş */
 
 
+
+/* SEHRİM *//* SEHRİM *//* SEHRİM *//* SEHRİM *//* SEHRİM *//* SEHRİM *//* SEHRİM *//* SEHRİM *//* SEHRİM *//* SEHRİM *//* SEHRİM */
+
+        .slider {
+            position: relative;
+            width: 100%;
+            height: 15cm;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+            background: #222;
+        }
+        .slides {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        .slide {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none;
+            cursor: pointer;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0,0,0,0.5);
+            color: #fff;
+            border: none;
+            font-size: 2rem;
+            padding: 8px 16px;
+            cursor: pointer;
+            z-index: 2;
+        }
+        .prev { left: 10px; }
+        .next { right: 10px; }
+        .city-section {
+            width: 80%;
+            margin: 32px auto;
+            background: #8894a2;
+            color: #fff;
+            padding: 32px;
+        }
+        .city-section h2 {
+            color: #fff;
+            margin-top: 0;
+        }
