@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Sonucu</title>
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+    <h1>Form Sonucu</h1>
+    <div id="sonuc"></div>
+    <script>
+        // URL'den parametreleri al ve göster
+        const params = new URLSearchParams(window.location.search);
+        let html = "<ul>";
+        for (const [key, value] of params.entries()) {
+            html += `<li><strong>${key}:</strong> ${value}</li>`;
+        }
+        html += "</ul>";
+        document.getElementById('sonuc').innerHTML = html;
+    </script>
+</body>
+</html>

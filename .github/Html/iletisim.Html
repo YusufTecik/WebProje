@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="Tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Mirasımız</title>
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1>Yusuf Tecik</h1>
+        <ul>
+            <li><a href="index.Html">HAKKIMDA</a></li>
+            <li><a href="ozgecmis.Html">ÖZGEÇMİŞ</a></li>
+            <li><a href="mirasimiz.Html">MİRASIMIZ</a></li>
+            <li><a href="sehrim.Html">ŞEHRİM</a></li>
+            <li><a href="giris.Html">GİRİŞ</a></li>
+            <li><a href="ilgiAlanlarim.Html">İLGİ ALANLARIM</a></li>
+            <li><a href="iletisim.Html">İLETİŞİM</a></li>
+        </ul>
+    </header>
+
+
+
+    <div class="container10">
+        <div class="info10">
+            <h1>İletişim Formu</h1>
+        </div>
+        <div id="app">
+            <form id="iletisimForm" action="form-sonuc.html" method="get">
+                <div>
+                    <label>Ad Soyad:</label>
+                    <input type="text" name="adsoyad" v-model="adsoyad">
+                </div>
+                <div>
+                    <label>E-posta:</label>
+                    <input type="text" name="email" v-model="email">
+                </div>
+                <div>
+                    <label>Telefon:</label>
+                    <input type="text" name="telefon" v-model="telefon">
+                </div>
+                <div>
+                    <label>Cinsiyet:</label>
+                    <input type="radio" name="cinsiyet" value="Erkek" v-model="cinsiyet"> Erkek
+                    <input type="radio" name="cinsiyet" value="Kadın" v-model="cinsiyet"> Kadın
+                </div>
+                <div>
+                    <label>Şehir:</label>
+                    <select name="sehir" v-model="sehir">
+                        <option value="">Seçiniz</option>
+                        <option value="Kayseri">Kayseri</option>
+                        <option value="İstanbul">İstanbul</option>
+                        <option value="Ankara">Ankara</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Hobiler:</label>
+                    <input type="checkbox" name="hobiler" value="Spor" v-model="hobiler"> Spor
+                    <input type="checkbox" name="hobiler" value="Müzik" v-model="hobiler"> Müzik
+                    <input type="checkbox" name="hobiler" value="Kitap" v-model="hobiler"> Kitap
+                </div>
+                <div>
+                    <label>Mesajınız:</label>
+                    <textarea name="mesaj" v-model="mesaj"></textarea>
+                </div>
+                <div style="margin-top:10px;">
+                    <button type="button" onclick="jsKontrol()">JS ile Kontrol Et</button>
+                    <button type="button" @click="vueKontrol">Vue.js ile Kontrol Et</button>
+                    <button type="button" @click="vueGonder">Vue.js ile Gönder</button>
+                    <button type="button" onclick="temizleForm()">Temizle</button>
+                </div>
+                <div id="hata" style="color:red;" v-html="hata" v-if="hata"></div>
+            </form>
+    </div>
+
+
+
+
+
+    
+    
+    <div class="container5">        
+        <div class="info5">
+            <h1>Blog </h1>
+        </div>
+
+        <div class="info5_5">
+            <p>Kişisel blogumda, hayatımda ilgi duyduğum konuları ve deneyimlerimi paylaşmayı seviyorum. Özellikle bilgisayar mühendisliği öğrencisi olarak teknolojiyle ilgili öğrendiklerimi, yazılım dünyasındaki gelişmeleri ve kendi projelerimi burada anlatıyorum.</p>
+        </div>
+    </div>
+
+    <div class="info6">
+        <p>Tüm Hakları Saklıdır ©</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+    <script src="Javascript/script.js"></script>
+</body>
+</html>
