@@ -390,3 +390,12 @@
 
 /* İLETİŞİM *//* İLETİŞİM *//* İLETİŞİM *//* İLETİŞİM *//* İLETİŞİM *//* İLETİŞİM *//* İLETİŞİM *//* İLETİŞİM *//* İLETİŞİM *//* İLETİŞİM *//* İLETİŞİM */
 
+    .info10, #app {
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #ffffff;
+        display: block;
+        width: 60%;           /* Genişlik vererek ortalar */
+        padding: 24px 40px;   /* Üst-alt ve sağ-sol boşluk */
+        box-sizing: border-box;  /* Köşeleri yumuşatmak için opsiyonel */
+    }
