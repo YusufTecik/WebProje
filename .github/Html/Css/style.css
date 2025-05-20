@@ -399,3 +399,33 @@
         padding: 24px 40px;   /* Üst-alt ve sağ-sol boşluk */
         box-sizing: border-box;  /* Köşeleri yumuşatmak için opsiyonel */
     }
+
+
+/* İLETİŞİM *//* İLETİŞİM *//* İLETİŞİM *//* İLETİŞİM *//* İLETİŞİM *//* İLETİŞİM *//* İLETİŞİM *//* İLETİŞİM *//* İLETİŞİM *//* İLETİŞİM *//* İLETİŞİM */
+
+
+/* MİRASIMIZ *//* MİRASIMIZ *//* MİRASIMIZ *//* MİRASIMIZ *//* MİRASIMIZ *//* MİRASIMIZ *//* MİRASIMIZ *//* MİRASIMIZ *//* MİRASIMIZ *//* MİRASIMIZ */
+
+    /* Kayseri miras arka planı */
+.container11 {
+    background-image: url('../Img/kayseri_evleri.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 350px;      /* Yüksekliği buradan ayarlayabilirsiniz */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    position: relative;
+
+}
+
+.info11 {
+    background: rgba(255,255,255,0.85); /* Okunabilirlik için beyaz yarı saydam kutu */
+    padding: 32px;
+    border-radius: 16px;
+    max-width: 700px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+    color: #222;
+    text-align: left;
+}
