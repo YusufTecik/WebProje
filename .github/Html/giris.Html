@@ -21,7 +21,20 @@
         </ul>
     </header>
 
-    
+    <div class="login-container">
+        <h2 class="mb-4">Giriş Yap</h2>
+        <form action="login.php" method="post" onsubmit="return validateLoginForm();">
+            <div class="mb-3">
+                <label for="kullaniciAdi" class="form-label">Kullanıcı Adı (Mail)</label>
+                <input type="text" class="form-control" id="kullaniciAdi" name="kullaniciAdi" placeholder="kullanıcı adı">
+            </div>
+            <div class="mb-3">
+                <label for="sifre" class="form-label">Şifre</label>
+                <input type="password" class="form-control" id="sifre" name="sifre" placeholder="Şifre">
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Giriş Yap</button>
+        </form>
+    </div>
     
     <div class="container5">        
         <div class="info5">

@@ -89,3 +89,47 @@ var app = new Vue({
         }
     }
 });
+
+
+function filmAra() {
+    const filmAdi = document.getElementById('filmArama').value;
+    const sonucDiv = document.getElementById('filmSonuc');
+    sonucDiv.innerHTML = "Yükleniyor...";
+    fetch(`https://www.omdbapi.com/?apikey=thewdb&t=${encodeURIComponent(filmAdi)}`)
+        .then(res => res.json())
+        .then(data => {
+            if (data.Response === "True") {
+                sonucDiv.innerHTML = `
+                    <h3>${data.Title} (${data.Year})</h3>
+                    <img src="${data.Poster}" alt="Poster" style="max-width:200px;">
+                    <p><strong>Tür:</strong> ${data.Genre}</p>
+                    <p><strong>IMDB:</strong> ${data.imdbRating}</p>
+                    <p><strong>Konu:</strong> ${data.Plot}</p>
+                `;
+            } else {
+                sonucDiv.innerHTML = "Film bulunamadı.";
+            }
+        })
+        .catch(() => sonucDiv.innerHTML = "Bir hata oluştu.");
+}
+
+
+function validateLoginForm() {
+    var email = document.getElementById("kullaniciAdi").value.trim();
+    var sifre = document.getElementById("sifre").value.trim();
+    var emailPattern = /^[a-zA-Z0-9._%+-]+@sakarya\.edu\.tr$/;
+    if(email === "" || sifre === "") {
+        alert("Kullanıcı adı ve şifre boş bırakılamaz!");
+        return false;
+    }
+    if(!emailPattern.test(email)) {
+        alert("Kullanıcı adı geçerli bir Sakarya Üniversitesi mail adresi olmalıdır!");
+        return false;
+    }
+    if(email !== "g231210013@sakarya.edu.tr" || sifre !== "g231210013") {
+        alert("Kullanıcı adı veya şifre hatalı!");
+        return false;
+    }
+    alert("Giriş başarılı!");
+    return true;
+}
